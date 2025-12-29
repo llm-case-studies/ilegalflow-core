@@ -1,0 +1,22 @@
+[package]
+name = "ilegalflow-eval"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "eval"
+path = "src/main.rs"
+
+[dependencies]
+ilegalflow-model = { path = "../model" }
+ilegalflow-features = { path = "../features" }
+ilegalflow-rerank = { path = "../rerank" }
+ilegalflow-explain = { path = "../explain" }
+ilegalflow-backend-manticore = { path = "../backend-manticore" }
+clap = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }

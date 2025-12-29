@@ -1,0 +1,9 @@
+[package]
+name = "ilegalflow-features"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+ilegalflow-model = { path = "../model" }
+rphonetic = { workspace = true }
+serde = { workspace = true }

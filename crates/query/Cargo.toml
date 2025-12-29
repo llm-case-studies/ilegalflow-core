@@ -1,0 +1,8 @@
+[package]
+name = "ilegalflow-query"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+ilegalflow-model = { path = "../model" }
+thiserror = { workspace = true }

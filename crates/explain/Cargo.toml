@@ -1,0 +1,8 @@
+[package]
+name = "ilegalflow-explain"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+ilegalflow-model = { path = "../model" }
+serde = { workspace = true }

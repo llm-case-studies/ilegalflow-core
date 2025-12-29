@@ -1,0 +1,9 @@
+[package]
+name = "ilegalflow-rerank"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+ilegalflow-model = { path = "../model" }
+ilegalflow-features = { path = "../features" }
+ilegalflow-explain = { path = "../explain" }

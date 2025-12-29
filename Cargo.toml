@@ -1,0 +1,45 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/model",
+    "crates/features",
+    "crates/query",
+    "crates/explain",
+    "crates/rerank",
+    "crates/backend-manticore",
+    "crates/eval",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/llm-case-studies/ilegalflow-core"
+
+[workspace.dependencies]
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Async runtime
+tokio = { version = "1.0", features = ["full"] }
+
+# HTTP client (for Manticore)
+reqwest = { version = "0.12", features = ["json"] }
+
+# Error handling
+thiserror = "2.0"
+anyhow = "1.0"
+
+# Phonetics
+rphonetic = "3.0"
+
+# CLI
+clap = { version = "4.0", features = ["derive"] }
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Testing
+pretty_assertions = "1.4"
